@@ -1,0 +1,5 @@
+name: EventsPlus
+version: ${project.version}
+main: br.com.quantum.eventsplus.core.EventsPlus
+authors: [ 1Ursoo, FelipeSz ]
+api-version: 1.8
