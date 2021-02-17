@@ -6,9 +6,9 @@ import br.com.quantum.eventsplus.entity.CommandBase;
 import br.com.quantum.eventsplus.utils.Utilities;
 import org.bukkit.command.CommandSender;
 
-public class StartEvent extends CommandBase {
-    public StartEvent(EventsPlus eventsPlus) {
-        super(eventsPlus, "startevent");
+public class EndEvent extends CommandBase {
+    public EndEvent(EventsPlus eventsPlus) {
+        super(eventsPlus, "endevent");
     }
 
     @Override
@@ -18,6 +18,6 @@ public class StartEvent extends CommandBase {
             return;
         }
 
-        PluginData.eventRunning.start();
+        PluginData.eventRunning.end();
     }
 }

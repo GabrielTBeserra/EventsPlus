@@ -7,6 +7,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class EventsPlus extends JavaPlugin {
     private static EventsPlus pl;
+    public static EventsPlus getInstance(){
+        return pl;
+    }
 
     public static JavaPlugin getPlugin() {
         return pl;

@@ -23,6 +23,11 @@ public class Events extends CommandBase {
             return;
         }
 
+        if (!PluginData.event.isAvaliable()) {
+            sender.sendMessage(Utilities.formatText("&cO evento ja iniciou!"));
+            return;
+        }
+
         if (PluginData.event.getPlayersLimit() != 0) {
             if (PluginData.event.getPlayersLimit() > (PluginData.event.getPlayers().size() + 1)) {
                 sender.sendMessage(Utilities.formatText("&cLimite de players do evento atingido!"));
